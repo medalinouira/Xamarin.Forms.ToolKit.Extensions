@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.TranslateExtensionView"
+             Title="TranslateExtension"
+             xmlns:ex="clr-namespace:Xamarin.Forms.ToolKit.Extensions;assembly=Xamarin.Forms.ToolKit.Extensions"              
+             BindingContext="{Binding TranslateExtension, Source={StaticResource Locator}}">
+    
+    <ContentPage.Content>
+        
+        <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Using Custom Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+                
+                <Label Text="{ex:Translate Key=SampleKey1, Resource=AppResources.Localization.Resources}"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="Using Custom Binding Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="{ex:Translate Key=SampleKey2, Resource={Binding MyResource}}"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="Using Default Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+                
+                <Label Text="{ex:Translate Key=SampleKey3}"
+                       HorizontalOptions="CenterAndExpand"/>
+                
+            </StackLayout>
+
+        </ContentView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

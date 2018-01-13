@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/medalinouira/Xamarin.Forms.Toolkit.Extensions</licenseUrl> 
+    <projectUrl>https://github.com/medalinouira/Xamarin.Forms.Toolkit.Extensions</projectUrl>
+    <iconUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Extensions/blob/master/Xamarin.Forms.ToolKit.Extensions/ic_xfe.png?raw=true</iconUrl> 
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>ImageResourceExtension, TranslateExtension</releaseNotes>
+    <copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</copyright>
+    <tags>Xamarin Xamarin.Forms Extension</tags>
+  </metadata>
+</package>

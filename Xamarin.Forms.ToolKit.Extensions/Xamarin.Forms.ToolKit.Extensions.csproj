@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <title>Xamarin.Forms.ToolKit.Extensions</title>
+    <PackageId>Xamarin.Forms.ToolKit.Extensions</PackageId>
+    <PackageVersion>1.0.4</PackageVersion>
+    <Authors>Mohamed Ali NOUIRA</Authors>
+    <Owners>Mohamed Ali NOUIRA</Owners>
+    <Description>Extensions for Xamarin.Forms.</Description>
+    <Summary>Extensions for Xamarin.Forms.</Summary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>ImageResourceExtension, TranslateExtension</PackageReleaseNotes>
+    <Copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</Copyright>
+    <PackageTags>Xamarin Xamarin.Forms Extension MVVM Sweet-MIT</PackageTags>
+    <PackageIconUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Extensions/blob/master/Xamarin.Forms.ToolKit.Extensions/ic_xfe.png?raw=true</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Extensions</PackageProjectUrl>
+    <Version>1.0.4</Version>
+    <PackageLicenseUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Extensions</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Extensions</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ic_xfe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ic_xfe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+  </ItemGroup>
+
+</Project>

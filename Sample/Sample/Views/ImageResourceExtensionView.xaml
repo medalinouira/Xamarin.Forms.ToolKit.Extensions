@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.ImageResourceExtensionView"
+             xmlns:ex="clr-namespace:Xamarin.Forms.ToolKit.Extensions;assembly=Xamarin.Forms.ToolKit.Extensions" 
+             Title="ImageResourceExtension"
+             BindingContext="{Binding ImageResourceExtension, Source={StaticResource Locator}}">
+    
+    <ContentPage.Content>
+        
+        <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Using Custom Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+                
+                <Image x:Name="sample1"    
+                       HeightRequest="60"
+                       Source="{ex:ImageResource Key=ic_xfe.png, Resource=AppResources.Assets}"/>
+
+                <Label Text="Using Custom Binding Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Image x:Name="sample2"    
+                       HeightRequest="60"
+                       Source="{ex:ImageResource Key=ic_xfe.png, Resource={Binding MyResource}}"/>
+
+                <Label Text="Using Default Resource"
+                       HorizontalOptions="CenterAndExpand"/>
+                
+                <Image x:Name="sample3" 
+                       HeightRequest="60"
+                       Source="{ex:ImageResource Key=ic_xfe.png}"/>
+
+            </StackLayout>
+
+        </ContentView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>
